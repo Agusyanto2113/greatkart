@@ -137,7 +137,20 @@ STATICFILES_DIRS = [
     'greatkart/static',
 ]
 
-
 #Media Files Configurations
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR /'media'
+
+#Messages Django
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+    messages.ERROR: "danger",
+    
+}
+
+#Email Configuration/ SMTP Configuration
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'agusyanto2114@gmail.com'
+EMAIL_HOST_PASSWORD = 'sjpl zytp mnja uhyi'
+EMAIL_USE_TLS = True
